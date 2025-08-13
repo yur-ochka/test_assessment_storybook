@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, run the storybook:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run storybook
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You will then be redirected to Storybook page on localhost:6006.
 
-## Learn More
+You can see all the available components on the left side, organized by section.
 
-To learn more about Next.js, take a look at the following resources:
+<img width="288" height="661" alt="image" src="https://github.com/user-attachments/assets/f43afd06-5c5f-4d10-8edf-c0547620cd57" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Component overview
 
-## Deploy on Vercel
+Input Component
+- Behavior:
+    - If `type="password"`:  an eye icon is displayed to toggle visibility
+    - If `clearable=true`:  a small "X" button is show to clear input
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img width="382" height="108" alt="image" src="https://github.com/user-attachments/assets/3c20be45-36dc-4806-b312-7cd69e8e9721" />
+<img width="388" height="110" alt="image" src="https://github.com/user-attachments/assets/43b36d71-4f83-4a13-97a0-b9afcc08e635" />
+<img width="324" height="90" alt="image" src="https://github.com/user-attachments/assets/11e95a67-6702-4aa1-b36e-286c1f5bfe8b" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Toast Component
+
+- Behavior:
+    - Appears at the bottom right
+    - Auto-dismisses after given duration
+    - Includes transition
+
+<img width="284" height="96" alt="image" src="https://github.com/user-attachments/assets/16c7cce5-4103-48dc-9a34-ce7eb21c6d51" />
+<img width="305" height="96" alt="image" src="https://github.com/user-attachments/assets/ace0cd57-137b-4a55-90c3-2f61c2e4d214" />
+
+Sidebar Menu Component
+
+- Behavior:
+    - Slides in from the right
+    - Renders nested submenus 
+    - Closes when background is clicked
+
+<img width="523" height="567" alt="image" src="https://github.com/user-attachments/assets/887d5f55-91cf-451b-8f7c-9aac5bc6db9e" />
+<img width="488" height="567" alt="image" src="https://github.com/user-attachments/assets/f3d445d6-3090-45d8-9495-c100875a5bb3" />
