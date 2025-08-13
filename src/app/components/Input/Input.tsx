@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 type InputProps = {
-  type?: "text" | "password";
+  type?: "text" | "password" | "number";
   clearable?: boolean;
   value?: string;
   onChange?: (value: string) => void;

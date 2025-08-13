@@ -49,3 +49,12 @@ export const ClearablePassword: StoryObj<typeof Input> = {
     placeholder: "Enter password",
   },
 };
+
+//number
+export const NumberInput: StoryObj<typeof Input> = {
+  args: {
+    type: "number",
+    clearable: false,
+    placeholder: "Enter number",
+  },
+};
