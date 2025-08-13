@@ -1,6 +1,12 @@
 ## Getting Started
 
-First, run the storybook:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the storybook:
 
 ```bash
 npm run storybook
